@@ -9,6 +9,10 @@ require('dotenv').config();
 export default class App extends React.Component {
   state = {videos: [], selectedVideo: null};
 
+  componentDidMount() {
+    this.onTermSubmit('cars')
+  };
+
   onTermSubmit = async term => {
     const response = await youtube.get('/search', {
       params: {
