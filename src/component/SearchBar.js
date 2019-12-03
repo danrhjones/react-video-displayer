@@ -23,6 +23,7 @@ export default class SearchBar extends React.Component {
 
   onFormSubmit =(event) => {
     event.preventDefault();
-  //  TODO make call back from parent
+
+    this.props.onFormSubmit(this.state.term);
   }
 }
