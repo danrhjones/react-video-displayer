@@ -3,7 +3,6 @@ import React from 'react';
 export default class SearchBar extends React.Component {
   state = {term: ''};
 
-
   render() {
     return (
         <div className="search-bar ui segment">

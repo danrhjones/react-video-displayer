@@ -3,7 +3,6 @@ import './videoitem.css';
 
 const VideoItem = ({video, onVideoSelect}) => {
   return (
-
       <div onClick={() => onVideoSelect(video)} className="video-item item">
         <img className="ui image"
              alt={video.snippet.title}
@@ -11,11 +10,8 @@ const VideoItem = ({video, onVideoSelect}) => {
         <div className="content">
           <div className="header">
             {video.snippet.title}
-
           </div>
-
         </div>
-
       </div>
   )
 };
